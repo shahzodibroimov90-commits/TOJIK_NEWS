@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOJIK NEWS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">TOJIK <span>NEWS</span></div>
+
+    <nav>
+        <a href="#home">Асосӣ</a>
+        <a href="#news">Хабарҳо</a>
+        <a href="#about">Дар бораи мо</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>TOJIK NEWS</h1>
+    <h2>Хабарҳои Тоҷикистон ва ҷаҳон</h2>
+    <p>Ҳамаи воқеаҳои муҳим дар як сомона!</p>
+    <a href="#news" class="btn">Хондани хабарҳо</a>
+</section>
+
+<section class="container" id="news">
+    <h2 class="section-title">Хабарҳои охирин</h2>
+
+    <input
+        type="text"
+        id="search"
+        placeholder="Хабарро ҷустуҷӯ кунед..."
+    >
+
+    <div class="categories">
+        <button onclick="filterNews('Ҳама')">Ҳама</button>
+        <button onclick="filterNews('Тоҷикистон')">Тоҷикистон</button>
+        <button onclick="filterNews('Ҷаҳон')">Ҷаҳон</button>
+        <button onclick="filterNews('Варзиш')">Варзиш</button>
+        <button onclick="filterNews('Технология')">Технология</button>
+    </div>
+
+    <div id="news-list" class="news-list"></div>
+</section>
+
+<section class="about" id="about">
+    <h2>Дар бораи TOJIK NEWS</h2>
+    <p>
+        TOJIK NEWS сомонаи хабарии тоҷикӣ мебошад.
+        Мо хабарҳои Тоҷикистон ва ҷаҳонро пешниҳод мекунем.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 TOJIK NEWS | Ҳамаи ҳуқуқҳо ҳифз шудаанд.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
